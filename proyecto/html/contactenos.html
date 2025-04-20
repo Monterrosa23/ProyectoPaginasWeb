@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>main page</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>texto principal</h1>
+            <nav class ="navega">
+                <a class="boto" href="index.php">principal</a>
+                <a class="boto" href="index.php">ventas</a>
+                <a class="boto" href="index.php">contactanos</a>
+                <a class="boto" href="index.php">agradecimiento</a>
+                <a class="boto" href="index.php">miscelanea</a>
+                <a class="boto" href="index.php">ganar</a>
+            </nav>
+        </header>
+        <div class="container">
+            <main>
+                <h2>titulo</h2>
+                <p>texto conmemorativo del titulo</p>
+                <a href="index.php">index</a>
+                <section>
+                    <h1>titulo de la seccion</h1>
+                    <p>texto de la seccion</p>
+                    <a href="index.php">index</a>
+                </section>
+            </main>
+            <aside>
+                <h3>aside</h3>
+                <p>texto del aside</p>
+                <a href="index.php">index</a>
+            </aside>
+
+        </div>
+        
+        <footer>
+            <h3>footer</h3>
+            <p>footer</p>
+            <a href="index.php">index</a>   
+        </footer>
+    </body>
+    <style>
+        .container{
+            display: flex;
+        }
+        .navega {
+            display: flex;
+        }
+        
+        nav {
+            background-color: rgb(170, 104, 29);
+            width: auto;
+            text-align: center;
+            padding: 1px;
+            border-collapse: collapse;
+        }
+        a.boto {
+            background-color: rgb(123, 122, 197);
+            text-align: center;
+            padding: 1px;
+            border-collapse: collapse;
+            margin: 5px;
+            border-radius: 20px;
+            flex:1;
+
+        }
+        a:hover {
+            background-color: rgb(184, 189, 139);
+        }
+        header {
+            background-color: brown;
+            width: auto;
+            text-align: center;
+            padding: 1px;
+            border-collapse: collapse;
+        }
+        main {
+            background-color: beige;
+            width: auto;
+            text-align: center;
+            padding: 1px;
+            border-collapse: collapse;
+            flex:1;
+
+        }
+        aside {
+            background-color: rgb(231, 241, 173);
+            width: 20%;
+            text-align: center;
+            padding: 1px;
+            border-collapse: collapse;
+
+        }
+        footer {
+            background-color: rgb(176, 223, 201);
+            width: auto;
+            text-align: center;
+            padding: 1px;
+            border-collapse: collapse;
+        }
+        section {
+            background-color: rgb(113, 156, 116);
+            width: 100%;
+            text-align: center;;
+            padding: 1px;
+            border-collapse: collapse;
+        }
+        
+    </style>
+</html>

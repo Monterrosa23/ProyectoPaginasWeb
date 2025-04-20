@@ -1,0 +1,66 @@
+.container{
+    display: flex;
+}
+.navega {
+    display: flex;
+}
+
+nav {
+    background-color: rgb(170, 104, 29);
+    width: auto;
+    text-align: center;
+    padding: 1px;
+    border-collapse: collapse;
+}
+a.boto {
+    background-color: rgb(123, 122, 197);
+    text-align: center;
+    padding: 1px;
+    border-collapse: collapse;
+    margin: 5px;
+    border-radius: 20px;
+    flex:1;
+
+}
+a:hover {
+    background-color: rgb(184, 189, 139);
+}
+header {
+    background-color: brown;
+    width: auto;
+    text-align: center;
+    padding: 1px;
+    border-collapse: collapse;
+}
+main {
+    background-color: beige;
+    width: auto;
+    text-align: center;
+    padding: 1px;
+    border-collapse: collapse;
+    flex:1;
+
+}
+aside {
+    background-color: rgb(231, 241, 173);
+    width: 25%;
+    text-align: center;
+    padding: 1px;
+    border-collapse: collapse;
+
+}
+footer {
+    background-color: rgb(176, 223, 201);
+    width: auto;
+    text-align: center;
+    padding: 1px;
+    border-collapse: collapse;
+}
+section {
+    background-color: rgb(113, 156, 116);
+    width: 100%;
+    text-align: center;;
+    padding: 1px;
+    border-collapse: collapse;
+}
+
