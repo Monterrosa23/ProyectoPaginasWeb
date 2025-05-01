@@ -4,9 +4,8 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.container{
-    display: flex;
-}
+/* esto es un poco raro pero como ocupaba un */
+
 .navega {
     display: flex;
 }
@@ -54,14 +53,25 @@
 .w500px-Photo-ID-221554545-5-hsla { color: hsla(28, 24, 53, 1); }
 
 
+/* tip para que el footer este siempre abajo usa las propiedades display flex y min-height: 100vh
+en el body de esa forma siempre estara abajo
+100vh significa 100% de la altura de la ventana del navegador
+y el flex hace que el footer se mantenga abajo y el main ocupe el espacio restante
+esta bien perron 
+  */
 
-
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*menu de navegacion*/
 nav {
     background-color: #214001;
     width: auto;
     text-align: center;
     padding: 1px;
-    border-collapse: collapse;
+
 }
 a.boto {
     background-color: #214001;
@@ -70,7 +80,7 @@ a.boto {
     text-decoration: none;
     text-align: center;
     padding: 1px;
-    border-collapse: collapse;
+
     margin: 5px;
     flex:1;
     transition:  background-color 0.3s, color 0.3s;
@@ -90,44 +100,47 @@ a.boto:hover {
     color: #1c3306;
     transition:  background-color 0.3s, color 0.3s;
 }
+/*fin del menu*/
+
+
 header {
     background-color: #214001;
     color: rgb(232, 255, 238);
     width: auto;
     text-align: center;
-    padding: 1px;
-    border-collapse: collapse;
+
 }
 main {
     background-color: #A6886D;
-    width: auto;
     text-align: center;
-    padding: 1px;
-    border-collapse: collapse;
+    display: inline-flex;
     flex:1;
 
 }
 aside {
-    background-color: #A6886D;
-    width: 25%;
     text-align: center;
-    padding: 1px;
-    border-collapse: collapse;
-
+    background-color: #A6886D;
+    align-items: center;
+    width: 100%;
 }
 footer {
     background-color: #A6886D;
-    width: auto;
     text-align: center;
-    padding: 1px;
-    border-collapse: collapse;
+    padding: auto;
+    top:100%;
+
+    width: 100%;
+    height: auto;
+    
+
 }
 section {
     background-color: #A6886D;
     width: 100%;
     text-align: center;;
     padding: 1px;
-    border-collapse: collapse;
+    width: fit-content;
+
 }
 ul{
     padding: 0 10%;
