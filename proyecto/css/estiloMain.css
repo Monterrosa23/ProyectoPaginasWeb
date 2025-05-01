@@ -1,66 +1,153 @@
-.container{
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/* esto es un poco raro pero como ocupaba un */
+
 .navega {
     display: flex;
 }
+/* Color Theme Swatches in Hex */
+.Wild-atmosphere-1-hex { color: #4C591E; }
+.Wild-atmosphere-2-hex { color: #38401C; }
+.Wild-atmosphere-3-hex { color: #99A637; }
+.Wild-atmosphere-4-hex { color: #6A7326; }
+.Wild-atmosphere-5-hex { color: #8C4A23; }
 
+/* Color Theme Swatches in RGBA */
+.Wild-atmosphere-1-rgba { color: rgb(76, 89, 30); }
+.Wild-atmosphere-2-rgba { color: rgb(56, 64, 28); }
+.Wild-atmosphere-3-rgba { color: rgb(153, 166, 55); }
+.Wild-atmosphere-4-rgba { color: rgb(106, 115, 38); }
+.Wild-atmosphere-5-rgba { color: rgb(140, 74, 35); }
+
+/* Color Theme Swatches in HSLA */
+.Wild-atmosphere-1-hsla { color: hsla(73, 49, 23, 1); }
+.Wild-atmosphere-2-hsla { color: hsla(73, 39, 18, 1); }
+.Wild-atmosphere-3-hsla { color: hsla(67, 50, 43, 1); }
+.Wild-atmosphere-4-hsla { color: hsla(67, 50, 30, 1); }
+.Wild-atmosphere-5-hsla { color: hsla(22, 60, 34, 1); }
+
+ /*Color Theme Swatches in Hex*/ 
+.w500px-Photo-ID-221554545-1-hex { color: #214001; }
+.w500px-Photo-ID-221554545-2-hex { color: #71A63C; }
+.w500px-Photo-ID-221554545-3-hex { color: #51731F; }
+.w500px-Photo-ID-221554545-4-hex { color: #593A1E; }
+.w500px-Photo-ID-221554545-5-hex { color: #A6886D; }
+
+/* Color Theme Swatches in RGBA */
+.w500px-Photo-ID-221554545-1-rgba { color: rgb(33, 64, 1); }
+.w500px-Photo-ID-221554545-2-rgba { color: rgb(113, 166, 60); }
+.w500px-Photo-ID-221554545-3-rgba { color: rgb(81, 115, 31); }
+.w500px-Photo-ID-221554545-4-rgba { color: rgb(89, 58, 30); }
+.w500px-Photo-ID-221554545-5-rgba { color: rgb(166, 136, 109); }
+
+
+/* Color Theme Swatches in HSLA */
+.w500px-Photo-ID-221554545-1-hsla { color: hsla(89, 96, 12, 1); }
+.w500px-Photo-ID-221554545-2-hsla { color: hsla(90, 46, 44, 1); }
+.w500px-Photo-ID-221554545-3-hsla { color: hsla(84, 57, 28, 1); }
+.w500px-Photo-ID-221554545-4-hsla { color: hsla(28, 49, 23, 1); }
+.w500px-Photo-ID-221554545-5-hsla { color: hsla(28, 24, 53, 1); }
+
+
+/* tip para que el footer este siempre abajo usa las propiedades display flex y min-height: 100vh
+en el body de esa forma siempre estara abajo
+100vh significa 100% de la altura de la ventana del navegador
+y el flex hace que el footer se mantenga abajo y el main ocupe el espacio restante
+esta bien perron 
+  */
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*menu de navegacion*/
 nav {
-    background-color: rgb(170, 104, 29);
+    background-color: #214001;
     width: auto;
     text-align: center;
     padding: 1px;
-    border-collapse: collapse;
+
 }
 a.boto {
-    background-color: rgb(123, 122, 197);
+    background-color: #214001;
+    color: rgb(232, 255, 238);
+    font-size: 20px;
+    text-decoration: none;
     text-align: center;
     padding: 1px;
-    border-collapse: collapse;
+
     margin: 5px;
-    border-radius: 20px;
     flex:1;
+    transition:  background-color 0.3s, color 0.3s;
 
 }
-a:hover {
-    background-color: rgb(184, 189, 139);
+a.boto:hover {
+    background-color: rgb(232, 255, 238);
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    color: #1c3306;
+    transition:  background-color 0.3s, color 0.3s;
 }
+/*fin del menu*/
+
+
 header {
-    background-color: brown;
+    background-color: #214001;
+    color: rgb(232, 255, 238);
     width: auto;
     text-align: center;
-    padding: 1px;
-    border-collapse: collapse;
+
 }
 main {
-    background-color: beige;
-    width: auto;
+    background-color: #A6886D;
     text-align: center;
-    padding: 1px;
-    border-collapse: collapse;
+    display: inline-flex;
     flex:1;
 
 }
 aside {
-    background-color: rgb(231, 241, 173);
-    width: 25%;
     text-align: center;
-    padding: 1px;
-    border-collapse: collapse;
-
+    background-color: #A6886D;
+    align-items: center;
+    width: 100%;
 }
 footer {
-    background-color: rgb(176, 223, 201);
-    width: auto;
+    background-color: #A6886D;
     text-align: center;
-    padding: 1px;
-    border-collapse: collapse;
+    padding: auto;
+    top:100%;
+
+    width: 100%;
+    height: auto;
+    
+
 }
 section {
-    background-color: rgb(113, 156, 116);
+    background-color: #A6886D;
     width: 100%;
     text-align: center;;
     padding: 1px;
-    border-collapse: collapse;
+    width: fit-content;
+
+}
+ul{
+    padding: 0 10%;
+    text-align: justify;
+}
+li{
+    padding: 1%;
+    
 }
 
