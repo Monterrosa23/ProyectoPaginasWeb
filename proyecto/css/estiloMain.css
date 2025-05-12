@@ -6,9 +6,7 @@
 }
 /* esto es un poco raro pero como ocupaba un */
 
-.navega {
-    display: flex;
-}
+
 /* Color Theme Swatches in Hex */
 .paleta
 { 
@@ -29,10 +27,9 @@ header {
     position: fixed ;
     color: #023010;
     width: 100%;
-    text-align: center;
     background: radial-gradient(circle, #9cdd47 ,#5fa603 , #1e9c8c);
     filter: drop-shadow(0px 5px 2px #156927b9);
-    z-index: 10;
+    z-index: 9;
 }
 
 main {
@@ -75,28 +72,25 @@ section {
     width: fit-content;
 
 }
-ul{
-    padding: 0 10%;
-    text-align: justify;
-}
-li{
-    padding: 1%;
-    
+ul.navegacion {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: 30px;
 }
 
 
 /*menu de navegacion*/
-nav {
+.menu {
     position: fixed;
     width: 100%;
-    text-align: center;
-    align-items: space-between;
     padding: 10px;
     background: radial-gradient(circle, #9cdd47 ,#5fa603 , #1e9c8c);
     filter: drop-shadow(0px 5px 2px #156927b9);
 
 }
-a.boto {
+a.item {
     color: #023010;
     font-size: 20px;
     text-decoration: none;
@@ -105,22 +99,62 @@ a.boto {
     margin: 5px;
     flex:1;
     transition:  background-color 0.3s, color 0.3s;
+    z-index: 10;
 
 }
-a.boto:hover {
-    background-color: rgba(240, 248, 255, 0.384);
-    transform: scale(1.1);
-    transition: transform 0.3s;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    margin-left: 0;
-    padding-left: 0;
-    margin-right: 0;
-    padding-right: 0;
+.item2 {
+    color: #023010;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    transition:  background-color 0.3s, color 0.3s;
+    z-index: 10;
+
+}
+a.item:hover {
+    background-color: rgba(156, 212, 245, 0.384);
+    transform: scale(1.5);
+    transition: transform 0.5s ease;
     box-sizing: border-box;
     color: #023010;
-    transition:  background-color 0.3s, color 0.3s;
 }
+.menuChiqui{
+    display: none;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/*menu comprimido*/
+@media (max-width: 768px) {
+    .menuChiqui{
+        display:block;
+        z-index: 10; 
+    }
+    .menu{
+        display: none;
+    }
+    .menu.active{
+        position: relative;
+        display:inline-flex;
+        top: 10%;
+        left: 0;
+        width: 20%;
+    /* esta instruccion es para que este elemento se superponga respecto al resto de elementos*/
+        z-index: 10;
+    }
+    .menuChiqui:hover{
+        background-color: rgba(156, 212, 245, 0.384);
+        color:#023010;
+        transition: 0.3s;
+    }
+}
+
+
+
 /*fin del menu*/
 
 
