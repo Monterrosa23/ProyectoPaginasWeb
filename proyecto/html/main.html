@@ -9,14 +9,17 @@
     </head>
     <body>
         <header>
-            <h1>Grupo Torogoz Azul</h1>
-            <nav class ="navega">
-                <a class="boto" href="..\html\main.html">principal</a>
-                <a class="boto" href="..\html\donaciones.html">donaciones</a>
-                <a class="boto" href="..\html\contactenos.html">contactanos</a>
-                <a class="boto" href="..\html\miscelanea.html">miscelanea</a>
-                <a class="boto" href="..\html\nosotros.html">nosotros</a>
+            <h1><a class="item2" href="../pages/inicio.html">Grupo Torogoz Azul</a></h1>
+            <div class ="menuChiqui" onclick="menuBot()">☰</div>
+            <nav class="menu" id="menu">
+                <ul class = "navegacion">
+                    <li ><a class="item" href="../pages/main.html">Inicio</a></li>
+                    <li ><a class="item" href="../pages/nosotros.html">nosotros</a></li>
+                    <li ><a class="item" href="../pages/donaciones.html">donaciones</a></li>
+                    <li ><a class="item" href="../pages/especies.html">especies</a></li>
+                </ul>
             </nav>
+            
         </header>
         <main>
             <article>
@@ -70,21 +73,22 @@
                 </p>   
             </article>
             <aside>
-                <h3>aside</h3>
-                <p>texto del aside</p>
-                <a href="index.php">index</a>
-                <section>
-                    <h1>titulo de la seccion</h1>
-                    <p>texto de la seccion</p>
-                    <a href="index.php">index</a>
-                </section>
+                <div class="contImagenes">
+                    <h2>Fauna</h2>
+                    <a href="..\html\torogoz.html"><img src="..\img\torogoz.png" alt="torogoz" class="silueta"></a>
+                    <p>torogoz</p>
+                    <a href="..\html\monoA.html"><img src="..\img\monoA.png" alt="mono araña" class="silueta"></a>
+                    <p>mono araña</p>
+                    <a href="..\html\cantil.html"><img src="..\img\cantil.png" alt="cantil" class="silueta"></a>
+                    <p>cantil</p>
+                </div>
             </aside>
         </main>
             
         <footer>
+            <script src="..\js\script.js"></script>
             <h3>footer</h3>
-            <p>footer</p>
-            <a href="index.php">index</a>   
+            <p>footer</p>  
         </footer>
     </body>
 
