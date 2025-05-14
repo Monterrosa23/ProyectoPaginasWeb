@@ -1,46 +1,95 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>donaciones</title>
+        <title>main page</title>
         <link rel="stylesheet" type="text/css" href="..\css\estiloMain.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="description" content="pagina sobre la concientizacion y proteccion de la fauna endemica de el pais.">
     </head>
     <body>
+        <div id="scroll-progress"></div>
         <header>
-            <h1>donaciones</h1>
-            <nav class ="navega">
-                <a class="boto" href="..\html\main.html">principal</a>
-                <a class="boto" href="..\html\donaciones.html">donaciones</a>
-                <a class="boto" href="..\html\contactenos.html">contactanos</a>
-                <a class="boto" href="..\html\miscelanea.html">miscelanea</a>
-                <a class="boto" href="..\html\nosotros.html">nosotros</a>
-            </nav>
+            <h1><a class="item2" href="../html/main.html">Grupo Torogoz Azul</a></h1>
+            <div class ="menuChiqui" onclick="menuBot()">☰</div>
+            <nav class="menu" id="menu">
+                <a class="item" href="../html/main.html">Inicio</a>
+                <a class="item" href="../html/nosotros.html">nosotros</a>
+                <a class="item" href="../html/donaciones.html">donaciones</a>
+                <a class="item" href="../html/especies.html">especies</a>
+            </nav> 
         </header>
-        <div class="container">
-            <main>
-                <h2>titulo</h2>
-                <p>texto conmemorativo del titulo</p>
-                <a href="index.php">index</a>
-                <section>
-                    <h1>titulo de la seccion</h1>
-                    <p>texto de la seccion</p>
-                    <a href="index.php">index</a>
-                </section>
-            </main>
+        <main>
+            <article>
+                <h2>Quienes somos?</h2>
+                <p>
+                    Somos una organizacion independiente y sin fines de lucro 
+                    que se dedica a dar a conocer las diferentes especies de fauna de nuestro pais el salvador
+                    con el fin de concientizar a la poblacion sobre la importancia de cuidar y proteger a estas especies.
+                    asi como servir como una enciclopedia de fauna salvadoreña, brindando informacion, datos curiosos y cosas sorprendentes sobre estas criaturas que comparte nuestro territorio.
+                </p>
+                <br>
+                <h2>mision</h2>
+                <p>
+                    <ul>
+                        <li>Crear conciencia sobre la importancia de cuidar y proteger a la fauna salvadoreña.</li>
+                        <li>Servir como una forma accesible y publica de obtener informacion sobre la fauna salvadoreña.</li>
+                        <li>Apoyar a la poblacion en la proteccion de la fauna salvadoreña, brindando informacion sobre como cuidar y proteger a estas especies.</li>
+                        <li>Concientizar sobre nuestro impacto en el ecosistema y como afecta a la fauna que vive alli.</li>
+                    </ul>
+                </p>
+                <br>
+                <h2>Vision</h2>
+                <p>
+                    <ul>
+                        <li>ser la mejor web para consultar informacion sobre las especies de vida endemicas de el salador.</li>
+                        <li>crear un espacio donde todas las personas puedan saciar su curiosidad en lo que a la fauna del pais se refiere</li>
+                        <li>organizar proyectos de concientizacion y rescate de las especies en peligro o protegidas del pais</li>
+                        
+                    </ul>
+                </p>
+                <br>
+                <div class="contexto">
+                    <h2>EL salvador</h2>
+                    <p>
+                        El salvador al ser un pais de clima tropical, posee una rica biodiversidad que incluye una gran variedad de especies de flora y fauna,
+                        aunado a esto las diferencias en el relieve generan diferentes microclimas que permiten la existencia de diferentes ecosistemas
+                        por esto mismo las especies endemicas del pais son muy diversas pese a compartir habitats con otros paises de la region.
+                        <br>
+                        Curiosamente esto mismo ha sido una de las razones por la cual la introduccion de especies no nativas ha sido exitosa, para bien o para mal,
+                        pues muchas de estas especies han logrado adaptarse a los ecosistemas del pais, lo que ha generado un impacto en la fauna nativa, viendose esta ultima desplazada y puesta en peligro
+                    </p>
+                </div>
+                <div class="Animales">
+                    <h2>La fauna salvadoreña</h2>
+                    <p>
+                        La fauna salvadoreña es rica y variada, con una gran cantidad de especies de mamíferos, aves, reptiles, anfibios y peces.
+                        Algunas de las especies más emblemáticas de la fauna salvadoreña incluyen el venado cola blanca, el jaguar, el Torogoz y la tortuga carey.
+                        Sin embargo, muchas de estas especies están en peligro de extinción debido a la pérdida de hábitat y la caza furtiva.
+                    </p>
+                </div>   
+            </article>
             <aside>
-                <h3>aside</h3>
-                <p>texto del aside</p>
-                <a href="index.php">index</a>
+                <h2>Fauna</h2>
+                <div class="contImagenes">
+                    
+                    <br>
+                    <div class="Exhibicion">
+                        <a href="..\html\torogoz.html"><img src="..\img\torogoz.png" alt="torogoz" class="silueta"></a>
+                        <p>torogoz</p>
+                    </div>
+                    <br>
+                    <div class="Exhibicion">
+                        <a href="..\html\cantil.html"><img src="..\img\cantil.png" alt="cantil" class="silueta"></a>
+                        <p>cantil</p>
+                    </div>
+                </div>
             </aside>
-
-        </div>
-        
+        </main>
+            
         <footer>
-            <h3>footer</h3>
-            <p>footer</p>
-  
+            <script src="..\scripts\script.js"></script>
+            <p>footer</p>  
         </footer>
     </body>
 

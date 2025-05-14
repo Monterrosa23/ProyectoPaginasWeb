@@ -34,17 +34,24 @@ header {
 
 main {
     padding-top: 10%;
+    padding-left: 15px;
     text-align: center;
+
     display: inline-flex;
     flex:1;
     color: aliceblue;
     width: 100%;
 }
 
+li{
+    list-style: none;
+}
 aside {
     text-align: center;
     align-items: center;
     width: 100%;
+    padding: 10px;
+
 }
 
 /* tip para que el footer este siempre abajo usa las propiedades display flex y min-height: 100vh
@@ -72,49 +79,52 @@ section {
     width: fit-content;
 
 }
-ul.navegacion {
-    list-style: none;
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    font-size: 30px;
+
+iframe{
+    border-radius: 10px;
 }
-
-
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
 /*menu de navegacion*/
+
 .menu {
+
     position: fixed;
     width: 100%;
     padding: 10px;
     background: radial-gradient(circle, #9cdd47 ,#5fa603 , #1e9c8c);
     filter: drop-shadow(0px 5px 2px #156927b9);
+    display: flex;
+    justify-content: space-between;
 
 }
-a.item {
-    color: #023010;
-    font-size: 20px;
+.menu .item {
+    display: inline-block;
+    padding: 5px 5px;
     text-decoration: none;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
+    width: fit-content;
+    font-size: 20px;
+    color: #023010;
     flex:1;
-    transition:  background-color 0.3s, color 0.3s;
     z-index: 10;
-
 }
+
 .item2 {
     color: #023010;
     font-size: 20px;
     text-decoration: none;
+
     padding: 10px;
     margin: 5px;
-    transition:  background-color 0.3s, color 0.3s;
     z-index: 10;
 
 }
 a.item:hover {
-    background-color: rgba(156, 212, 245, 0.384);
-    transform: scale(1.5);
+    transform: scale(1.3);
+    padding: 5px 5px;
     transition: transform 0.5s ease;
     box-sizing: border-box;
     color: #023010;
@@ -131,23 +141,25 @@ a.item:hover {
 /*menu comprimido*/
 @media (max-width: 768px) {
     .menuChiqui{
-        display:block;
+        display:inline;
         z-index: 10; 
     }
     .menu{
         display: none;
     }
     .menu.active{
-        position: relative;
-        display:inline-flex;
-        top: 10%;
+        position: absolute;
+        display:flex;
+        flex-direction: column;
+        top: 100%;
         left: 0;
-        width: 20%;
+        width: 200px;
+        background: #5fa603b4;
     /* esta instruccion es para que este elemento se superponga respecto al resto de elementos*/
         z-index: 10;
     }
     .menuChiqui:hover{
-        background-color: rgba(156, 212, 245, 0.384);
+        background-color: rgba(18, 72, 104, 0.384);
         color:#023010;
         transition: 0.3s;
     }
@@ -157,7 +169,17 @@ a.item:hover {
 
 /*fin del menu*/
 
-
+/* Barra en la parte superior */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #29b6f6;
+    width: 0%;
+    z-index: 900;
+    transition: width 0.1s ease-out;
+    }
 
 
 /*un estilo para que la imagen se vea con silueta*/
@@ -166,12 +188,105 @@ a.item:hover {
     max-height: 300px;
     transition: filter 0.1s ;
     padding: 20px;
+    cursor: pointer;
 }
 
 .silueta:hover {
     filter: drop-shadow(10px -5px 1px #70c2a0fd);
-    cursor: pointer;
     scale: 1.05;
+
 }
+.ladoAlado{
+    display: flex;
+}
+.Exhibicion{
+    gap:10px;
+    border:#5fa603b4 solid 2px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+
 /*fin del estilo de la silueta*/
-/*para comprimir el menu*/
+
+/*carrusel*/
+.carrusel {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.diapositivas {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.diapositiva {
+    min-width: 100%;
+    height: 100%;
+}
+
+.diapositiva img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.previo {
+    left: 10px;
+}
+
+.siguiente {
+    right: 10px;
+}
+
+.boton:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/*fin de carrusel*/
+/*blur en etiquetas de las especies*/
+
+.blur {
+    max-height: 100px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    padding-bottom: 0;
+}
+
+.blur::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px; /* altura del desvanecido */
+    background: linear-gradient(to bottom, #5fa6032c , #16bba5);
+
+}
+
+.contenido {
+    font-size: 16px;
+    line-height: 1.5;
+    }
+
+/*blur en etiquetas de las especies*/
