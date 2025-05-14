@@ -3,6 +3,7 @@ let indice = 0;
 const diapositivas = document.getElementById("diapositivas");
 const total = diapositivas.children.length;
 
+
 window.onscroll = function () {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -10,6 +11,7 @@ window.onscroll = function () {
     document.getElementById("scroll-progress").style.width = scrolled + "%";
 
 };
+
 
 function menuBot() {
     const nav = document.getElementById('menu');
@@ -23,5 +25,5 @@ function menuBot() {
 function moverCarrusel(direccion) {
     indice = (indice + direccion + total) % total;
     diapositivas.style.transform = `translateX(-${indice * 100}%)`;
-    
+
 }
