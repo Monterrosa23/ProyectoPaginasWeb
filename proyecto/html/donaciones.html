@@ -20,76 +20,51 @@
             </nav> 
         </header>
         <main>
-            <article>
-                <h2>Quienes somos?</h2>
-                <p>
-                    Somos una organizacion independiente y sin fines de lucro 
-                    que se dedica a dar a conocer las diferentes especies de fauna de nuestro pais el salvador
-                    con el fin de concientizar a la poblacion sobre la importancia de cuidar y proteger a estas especies.
-                    asi como servir como una enciclopedia de fauna salvadoreña, brindando informacion, datos curiosos y cosas sorprendentes sobre estas criaturas que comparte nuestro territorio.
-                </p>
-                <br>
-                <h2>mision</h2>
-                <p>
-                    <ul>
-                        <li>Crear conciencia sobre la importancia de cuidar y proteger a la fauna salvadoreña.</li>
-                        <li>Servir como una forma accesible y publica de obtener informacion sobre la fauna salvadoreña.</li>
-                        <li>Apoyar a la poblacion en la proteccion de la fauna salvadoreña, brindando informacion sobre como cuidar y proteger a estas especies.</li>
-                        <li>Concientizar sobre nuestro impacto en el ecosistema y como afecta a la fauna que vive alli.</li>
-                    </ul>
-                </p>
-                <br>
-                <h2>Vision</h2>
-                <p>
-                    <ul>
-                        <li>ser la mejor web para consultar informacion sobre las especies de vida endemicas de el salador.</li>
-                        <li>crear un espacio donde todas las personas puedan saciar su curiosidad en lo que a la fauna del pais se refiere</li>
-                        <li>organizar proyectos de concientizacion y rescate de las especies en peligro o protegidas del pais</li>
-                        
-                    </ul>
-                </p>
-                <br>
-                <div class="contexto">
-                    <h2>EL salvador</h2>
-                    <p>
-                        El salvador al ser un pais de clima tropical, posee una rica biodiversidad que incluye una gran variedad de especies de flora y fauna,
-                        aunado a esto las diferencias en el relieve generan diferentes microclimas que permiten la existencia de diferentes ecosistemas
-                        por esto mismo las especies endemicas del pais son muy diversas pese a compartir habitats con otros paises de la region.
+            <article class="fixi">
+                <div class="donaciones">
+                    <h2>Donaciones para refugio Torogoz</h2>
+                    <form class="donation-form" action="guardar" method="POST">
+
+                        <label for="pregunta">¿Cuanto desea donar a nuestra fundación</label>
                         <br>
-                        Curiosamente esto mismo ha sido una de las razones por la cual la introduccion de especies no nativas ha sido exitosa, para bien o para mal,
-                        pues muchas de estas especies han logrado adaptarse a los ecosistemas del pais, lo que ha generado un impacto en la fauna nativa, viendose esta ultima desplazada y puesta en peligro
-                    </p>
-                </div>
-                <div class="Animales">
-                    <h2>La fauna salvadoreña</h2>
-                    <p>
-                        La fauna salvadoreña es rica y variada, con una gran cantidad de especies de mamíferos, aves, reptiles, anfibios y peces.
-                        Algunas de las especies más emblemáticas de la fauna salvadoreña incluyen el venado cola blanca, el jaguar, el Torogoz y la tortuga carey.
-                        Sin embargo, muchas de estas especies están en peligro de extinción debido a la pérdida de hábitat y la caza furtiva.
-                    </p>
-                </div>   
+                        <button type="button" style="width: 45px; height: 35px;">5</button>
+                        <button type="button" style="width: 45px; height: 35px;">10</button>
+                        <button type="button" style="width: 45px; height: 35px;">15</button>
+
+                        <br>
+
+                        <label for="monto">Ingrese un monto especifico a donar</label>
+
+                        <input type="text" id="monto" name="monto" required>
+                        <br>
+
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <br>
+
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+
+                        <label for="metodo">Método de pago</label>
+                        <select id="metodo" name="metodo" required>
+                            <option value="">Selecciona un método</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="tarjeta">Tarjeta de crédito</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                        </select>
+                        <br>
+
+                        <button type="button" style="width: 100px; height: 35px;">Enviar</button>
+                    </form>
+
+                </div> 
             </article>
-            <aside>
-                <h2>Fauna</h2>
-                <div class="contImagenes">
-                    
-                    <br>
-                    <div class="Exhibicion">
-                        <a href="..\html\torogoz.html"><img src="..\img\torogoz.png" alt="torogoz" class="silueta"></a>
-                        <p>torogoz</p>
-                    </div>
-                    <br>
-                    <div class="Exhibicion">
-                        <a href="..\html\cantil.html"><img src="..\img\cantil.png" alt="cantil" class="silueta"></a>
-                        <p>cantil</p>
-                    </div>
-                </div>
-            </aside>
         </main>
             
         <footer>
             <script src="..\scripts\script.js"></script>
-            <p>footer</p>  
+            <p>ya jugamos mucho a ser dios extinguiendo especies, jugemos tambien a ser humanos y sintamos empatia por ellos</p>  
         </footer>
     </body>
 

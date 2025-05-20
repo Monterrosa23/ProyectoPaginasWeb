@@ -27,7 +27,7 @@ header {
     position: fixed ;
     color: #023010;
     width: 100%;
-    background: radial-gradient(circle, #9cdd47 ,#5fa603 , #1e9c8c);
+    background: #5fa603;
     filter: drop-shadow(0px 5px 2px #156927b9);
     z-index: 9;
 }
@@ -53,7 +53,19 @@ aside {
     padding: 10px;
 
 }
+article{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
 
+
+}
+/*pequeña correccion para el formulario*/
+.fixi{
+    padding-left: 25%;
+    padding-right: 25%;
+}
 /* tip para que el footer este siempre abajo usa las propiedades display flex y min-height: 100vh
 en el body de esa forma siempre estara abajo
 100vh significa 100% de la altura de la ventana del navegador
@@ -63,7 +75,7 @@ esta bien perron
 footer {
     background-color: #14484ed3;
     text-align: center;
-    padding: auto;
+    padding: 10px;
     top:100%;
     color: #b2f1c5;
     width: 100%;
@@ -94,7 +106,7 @@ a{
     position: fixed;
     width: 100%;
     padding: 10px;
-    background: radial-gradient(circle, #9cdd47 ,#5fa603 , #1e9c8c);
+    background: #5fa603;
     filter: drop-shadow(0px 5px 2px #156927b9);
     display: flex;
     justify-content: space-between;
@@ -116,7 +128,6 @@ a{
     color: #023010;
     font-size: 20px;
     text-decoration: none;
-
     padding: 10px;
     margin: 5px;
     z-index: 10;
@@ -181,7 +192,6 @@ a.item:hover {
     transition: width 0.5s ease-out;
     }
 
-
 /*un estilo para que la imagen se vea con silueta*/
 .silueta {
     width: 250px;
@@ -205,9 +215,8 @@ a.item:hover {
     border-radius: 10px;
     flex: 1;
 }
-
-
 /*fin del estilo de la silueta*/
+
 
 /*carrusel*/
 .carrusel {
@@ -263,6 +272,7 @@ a.item:hover {
     background-color: rgba(0,0,0,0.8);
 }
 /*fin de carrusel*/
+
 /*blur en etiquetas de las especies*/
 
 .blur {
@@ -281,7 +291,6 @@ a.item:hover {
     right: 0;
     height: 40px; /* altura del desvanecido */
     background: linear-gradient(to bottom, #5fa6032c , #16bba5);
-
 }
 
 .contenido {
@@ -290,3 +299,44 @@ a.item:hover {
     }
 
 /*blur en etiquetas de las especies*/
+
+
+/*formulario*/
+
+.donaciones{
+    display: block;
+    width: 700px;
+    padding: 40px;
+    background:linear-gradient(to bottom, blue 60%, skyblue );
+    border-radius: 10px;
+    line-height: 2.5;
+}
+button{
+    border-style: none;
+    border-radius: 10px;
+    background-color: #023010;
+    color: aliceblue;
+
+}
+button:hover{
+    border-style: none;
+    border-radius: 10px;
+    background-color: #73482F;
+    color: aliceblue;
+    transition: 0.3s ease;
+    cursor:pointer;
+}
+button::after{
+    background-color: #5ad83ab4;
+    color: aliceblue;
+}
+
+input{
+    border-style: none;
+    
+
+}
+select{
+    border-style: none;
+    
+}
