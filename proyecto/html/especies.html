@@ -1,46 +1,137 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>miscelanea</title>
+        <title>main page</title>
         <link rel="stylesheet" type="text/css" href="..\css\estiloMain.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="description" content="pagina sobre la concientizacion y proteccion de la fauna endemica de el pais.">
     </head>
     <body>
+        <div id="scroll-progress"></div>
         <header>
-            <h1>miscelanea</h1>
-            <nav class ="navega">
-                <a class="boto" href="..\html\main.html">principal</a>
-                <a class="boto" href="..\html\donaciones.html">donaciones</a>
-                <a class="boto" href="..\html\contactenos.html">contactanos</a>
-                <a class="boto" href="..\html\miscelanea.html">miscelanea</a>
-                <a class="boto" href="..\html\nosotros.html">nosotros</a>
-            </nav>
+            <h1><a class="item2" href="../html/main.html">Grupo Torogoz Azul</a></h1>
+            <div class ="menuChiqui" onclick="menuBot()">☰</div>
+            <nav class="menu" id="menu">
+                <a class="item" href="../html/main.html">Inicio</a>
+                <a class="item" href="../html/nosotros.html">nosotros</a>
+                <a class="item" href="../html/donaciones.html">donaciones</a>
+                <a class="item" href="../html/especies.html">especies</a>
+            </nav> 
         </header>
-        <div class="container">
-            <main>
-                <h2>titulo</h2>
-                <p>texto conmemorativo del titulo</p>
-                <a href="index.php">index</a>
-                <section>
-                    <h1>titulo de la seccion</h1>
-                    <p>texto de la seccion</p>
-                    <a href="index.php">index</a>
-                </section>
-            </main>
-            <aside>
-                <h3>aside</h3>
-                <p>texto del aside</p>
-                <a href="index.php">index</a>
-            </aside>
+        <main>
+            <article>
+                <div class="carrusel">
+                    <div class="diapositivas" id="diapositivas">
+                        <div class="diapositiva"><img src="..\img\cantil1.jpeg" alt="Imagen 1"></div>
+                        <div class="diapositiva"><img src="..\img\monaso.jpg" alt="Imagen 2"></div>
+                        <div class="diapositiva"><img src="..\img\puma1.jpeg" alt="Imagen 3"></div>
+                        <div class="diapositiva"><img src="..\img\torogoz1.jpeg" alt="Imagen 4"></div>
+                        <div class="diapositiva"><img src="..\img\carey.jpg" alt="Imagen 5"></div>
+                    </div>
+                    <button class="boton previo" onclick="moverCarrusel(-1)">&#10094;</button>
+                    <button class="boton siguiente" onclick="moverCarrusel(1)">&#10095;</button>
+                </div>
 
-        </div>
-        
+                <div class="contexto">
+                    <br>
+                    <p>
+                        las causas del peligro de extinsion en este pais son diversas en motivo, pero bastante comunes en origen
+                        porque muchas de estas especies tienen diferentes razones para estar en peligro de extinsion
+                        que si calentamiento global, que contaminacion del ecosistema, que si introduccion de especies invasoras que los desplazan
+                        pero todo se resume a una cosa <b>El ser humano</b> todas las razones anteriores las provocamos nosotros de hecho algunas son tan hilarantes como
+                        simple ignorancia, algunas de estas especies creemos que son venenosas cuando no es asi y las matamos por miedo
+                        <br>
+                        en resumen somos bien basura
+                        <br>
+                    </p>
+                </div>
+                <div class="Animales">
+                    <h2>conocelos antes de que se extingan</h2>
+                    <div class="ladoAlado">
+                        <div class="Exhibicion">
+                            <a href="..\html\torogoz.html">
+                                <img src="..\img\torogoz.png" alt="torogoz" class="silueta">
+                                <div class="oculto">conoceme!</div>
+                            </a>
+                            <br>
+                            <p>torogoz</p>
+                            <br>
+                            <p class="blur">
+                                El Torogoz es el ave nacional de El Salvador y es conocido por su hermoso plumaje de colores brillantes, que incluye tonos de azul, verde y amarillo.
+                                Esta ave es un símbolo de la biodiversidad del país y se encuentra en los bosques tropicales y subtropicales de la región.
+                                El Torogoz es un ave migratoria que se alimenta principalmente de frutas e insectos siendo un controlador de estos ultimos, y su canto melodioso es una parte importante del paisaje sonoro de El Salvador.
+                                Sin embargo, el Torogoz enfrenta amenazas debido a la deforestación y la pérdida de hábitat, lo que ha llevado a su inclusión en la lista de especies en peligro de extinción.
+                                La conservación de esta especie es fundamental para preservar la biodiversidad del país y mantener el equilibrio de los ecosistemas locales.
+                            </p>
+                        </div>
+                        <div class="Exhibicion">
+                            <a href="..\html\cantil.html">
+                                <img src="..\img\cantil.png" alt="cantil" class="silueta">
+                                <div class="oculto">conoceme!</div>
+                            </a>
+                            <br>
+                            <p>cantil</p>
+                            <br>
+                            <p class="blur">
+                                los sceloporus salvini mejor conocidos por el nombre de cantiles, son una especie endemica de el salvador, por lo que es imposible encontrarla en otro sitio que no sea aqui
+                                esta es una lagartija con tonalidades negras y una cabeza muy caracteristica de color rojizo, habita en zonas calidas y bosques donde usa sus colores anturales para camuflarse entre 
+                                la hojarasca y las rocas, podria parecer lo contrario por su color tan caracteristico, pero primero: presenta dimorfismo sexual, por lo que los ejemplares de macho y hembra son diferentes
+                                siendo el macho el de vivos colores. y segundo: parece que no pero muchos de los depredadores de estos animales no distinguen bien los tonos de rojo, por lo que para ellos no son diferentes a 
+                                una mancha en la roca
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ladoAlado">
+                        <div class="Exhibicion">
+                            <a href="..\html\puma.html">
+                                <img src="..\img\puma.png" alt="puma" class="silueta">
+                                <div class="oculto">conoceme!</div>
+                            </a>
+                            <br>
+                            <p>puma</p>
+                            <br>
+                            <p class="blur">
+                                El puma (Puma concolor), también conocido como león de montaña o cougar, 
+                                es una de las especies de felinos más grandes del continente americano. 
+                                En El Salvador, aunque actualmente es muy raro encontrarlo en estado silvestre debido a la pérdida de hábitat y la caza, 
+                                se han registrado avistamientos históricos en zonas montañosas como el Parque Nacional El Imposible.
+                                El puma es un depredador tope, lo que significa que se encuentra en la cima de la cadena alimentaria. 
+                                Su presencia ayuda a mantener el equilibrio ecológico al controlar las poblaciones de presas como venados, 
+                                coatíes y otros mamíferos medianos. 
+                                Esto, a su vez, regula la vegetación y favorece la salud del ecosistema.
+                            </p>
+                        </div>
+                        <div class="Exhibicion">
+                            <a href="..\html\mono.html">
+                                <img src="..\img\monoA.png" alt="mono" class="silueta">
+                                <div class="oculto">conoceme!</div>
+                            </a>
+                            <br>
+                            <p>mono araña</p>
+                            <br>
+                            <p class="blur">
+                                El mono araña de Geoffroy (Ateles geoffroyi) es una especie de primate que pertenece al género Ateles y 
+                                a la familia Atelidae. Se distribuye principalmente en las selvas tropicales de Centroamérica, 
+                                desde el sureste de México hasta Panamá, aunque también puede encontrarse en algunas áreas del norte de Colombia. Su hábitat preferido son los bosques tropicales de baja y mediana altitud, 
+                                aunque también habita en bosques secos y manglares.
+                                Este mono tiene características físicas distintivas, como extremidades largas y una cola prensil altamente desarrollada, 
+                                que le permite usarla como una especie de "quinta extremidad" para moverse entre los árboles y manipular objetos. 
+                                A pesar de no tener un pulgar completamente desarrollado, sus manos en forma de gancho son perfectas para balancearse de un árbol 
+                                a otro, en un estilo de locomoción conocido como braquiación. 
+                                Su dieta es principalmente frugívora, alimentándose de frutas, 
+                                aunque también consume hojas, semillas y flores.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>   
+            </article>
+        </main>
+            
         <footer>
-            <h3>footer</h3>
-            <p>footer</p>
-  
+            <script src="..\scripts\script.js"></script>
+            <p>ya jugamos mucho a ser dios extinguiendo especies, jugemos tambien a ser humanos y sintamos empatia por ellos</p>  
         </footer>
     </body>
 

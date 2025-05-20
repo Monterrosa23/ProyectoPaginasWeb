@@ -1,46 +1,103 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>nosotros</title>
+        <title>main page</title>
         <link rel="stylesheet" type="text/css" href="..\css\estiloMain.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="description" content="pagina sobre la concientizacion y proteccion de la fauna endemica de el pais.">
     </head>
     <body>
+        <div id="scroll-progress"></div>
         <header>
-            <h1>Nosotros</h1>
-            <nav class ="navega">
-                <a class="boto" href="..\html\main.html">principal</a>
-                <a class="boto" href="..\html\donaciones.html">donaciones</a>
-                <a class="boto" href="..\html\contactenos.html">contactanos</a>
-                <a class="boto" href="..\html\miscelanea.html">miscelanea</a>
-                <a class="boto" href="..\html\nosotros.html">nosotros</a>
-            </nav>
+            <h1><a class="item2" href="../html/main.html">Grupo Torogoz Azul</a></h1>
+            <div class ="menuChiqui" onclick="menuBot()">☰</div>
+            <nav class="menu" id="menu">
+                <a class="item" href="../html/main.html">Inicio</a>
+                <a class="item" href="../html/nosotros.html">nosotros</a>
+                <a class="item" href="../html/donaciones.html">donaciones</a>
+                <a class="item" href="../html/especies.html">especies</a>
+            </nav> 
         </header>
-        <div class="container">
-            <main>
-                <h2>titulo</h2>
-                <p>texto conmemorativo del titulo</p>
-                <a href="index.php">index</a>
-                <section>
-                    <h1>titulo de la seccion</h1>
-                    <p>texto de la seccion</p>
-                    <a href="index.php">index</a>
-                </section>
-            </main>
-            <aside>
-                <h3>aside</h3>
-                <p>texto del aside</p>
-                <a href="index.php">index</a>
-            </aside>
+        <main>
+            <article>
+                <h2>Conocenos mas en profundidad</h2>
+                <div class="ladoAlado">
+                    <div class="Exhibicion">
+                        <img style="border-radius: 10px;" src="..\img\icono.png" alt="monterrosa" class="silueta">   
+                        <br>
+                        <p>Monterosa</p>
+                        <br>
+                        <p class="">
+                            Nombre: Jose Roberto Monterosa Bonilla
+                            <br>
+                            Estudiante en tecnico en ingenieria en desarrollo de software
+                            <br>
+                            Año 2025
+                            <br>
+                            Residencia Zacatecoluca
+                            <br>
 
-        </div>
-        
+                        </p>
+                    </div>
+                    <div class="Exhibicion">
+                        <img style="border-radius: 10px;" src="..\img\perfil.png" alt="cristian" class="silueta">
+                        <br>
+                        <p>Cristian</p>
+                        <br>
+                        <p class="">
+                            Nombre: Cristian Miguel Hernández Amaya
+                            <br>
+                            Estudiante en tecnico en ingenieria en desarrollo de software
+                            <br>
+                            Año 2025
+                            <br>
+                            Residencia San Emigdio
+                            <br>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="ladoAlado">
+                    <div class="Exhibicion">
+                        <img style="border-radius: 10px;" src="..\img\icono.png" alt="jeremias" class="silueta">
+                        <br>
+                        <p>Jeremias</p>
+                        <br>
+                        <p class="">
+                            Nombre: Jeremias
+                            <br>
+                            Estudiante en tecnico en ingenieria en desarrollo de software
+                            <br>
+                            Año 2025
+                            <br>
+                            Residencia Zacatecoluca
+                            <br>
+                        </p>
+                    </div>
+                    <div  class="Exhibicion">
+                            <img style="border-radius: 10px;" src="..\img\perfil.png" alt="anderson" class="silueta">
+                            <div class="oculto">conoceme!</div>
+                        <br>
+                        <p>Anderson</p>
+                        <br>
+                        <p class="">
+                            Nombre: Anderson Josue Urquilla
+                            <br>
+                            Estudiante en tecnico en ingenieria en desarrollo de software
+                            <br>
+                            Año 2025
+                            <br>
+                            Residencia Zacatecoluca
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </main>
+            
         <footer>
-            <h3>footer</h3>
-            <p>footer</p>
-
+            <script src="..\scripts\script.js"></script>
+            <p>footer</p>  
         </footer>
     </body>
 
