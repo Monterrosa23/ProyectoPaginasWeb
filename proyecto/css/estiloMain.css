@@ -275,28 +275,7 @@ a.item:hover {
 
 /*blur en etiquetas de las especies*/
 
-.blur {
-    max-height: 100px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    padding-bottom: 0;
-}
 
-.blur::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 40px; /* altura del desvanecido */
-    background: linear-gradient(to bottom, #5fa6032c , #16bba5);
-}
-
-.contenido {
-    font-size: 16px;
-    line-height: 1.5;
-    }
 
 /*blur en etiquetas de las especies*/
 
@@ -307,7 +286,7 @@ a.item:hover {
     display: block;
     width: 700px;
     padding: 40px;
-    background:linear-gradient(to bottom, blue 60%, skyblue );
+    background:#128d5eb4;
     border-radius: 10px;
     line-height: 2.5;
 }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>main page</title>
+        <link rel="stylesheet" type="text/css" href="..\css\estiloMain.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="pagina sobre la concientizacion y proteccion de la fauna endemica de el pais.">
+    </head>
+    <body>
+        <div id="scroll-progress"></div>
+        <header>
+            <h1><a class="item2" href="../html/main.html">Grupo Torogoz Azul</a></h1>
+            <div class ="menuChiqui" onclick="menuBot()">☰</div>
+            <nav class="menu" id="menu">
+                <a class="item" href="../html/main.html">Inicio</a>
+                <a class="item" href="../html/nosotros.html">nosotros</a>
+                <a class="item" href="../html/donaciones.html">donaciones</a>
+                <a class="item" href="../html/especies.html">especies</a>
+                <a class="item" href="../html/servicios.html">Servicios</a>
+            </nav> 
+        </header>
+        <main>
+            <article>
+                <div class="contexto">
+                    <h2>que hacer en caso de encontrar un animal herido </h2>
+                    <br>
+                    <p>
+                        Si encuentras un animal herido, lo primero es llamar al 112 o al número de emergencia local para informar del incidente y 
+                        solicitar ayuda. Mientras esperas la llegada de los servicios de emergencia, intenta mantenerte alejado del animal, 
+                        utilizando protección si es necesario, y no intentes darle comida o agua
+                        <br>
+                        <ol>
+                            <li>
+                                Llama a emergencias:<br>
+                                Inmediatamente llama al 112 o a la línea de emergencia local para informar del animal herido, proporcionando información precisa sobre su ubicación. 
+                            </li>
+                            <li>
+                                Mantente a salvo:<br>
+                                Un animal herido puede ser agresivo, así que manten distancia y utiliza guantes o protección si vas a acercarte. 
+
+                            </li>
+                            <li>
+                                No intentes manipular el animal:<br>
+                                No le des comida, agua o medicamentos. No intentes curar las heridas ni manipularlo sin tener la experiencia adecuada. 
+                            </li>
+                            <li>
+                                Protege al animal del clima:<br>
+                                Si es posible, protégelo de la lluvia, el viento y el sol con un material suave como una manta o prenda de vestir. 
+                            </li>
+                            <li>
+                                Aísla al animal del ruido y el estrés:<br>
+                                Mantenlo en un lugar tranquilo y seguro, lejos de niños, mascotas y posibles fuentes de estrés, hasta que llegue la ayuda especializada. 
+                            </li>
+                            <li>
+                                Si tienes dudas, consulta con especialistas:<br>
+                                Contacta con un Centro de Recuperación de Fauna Silvestre o con organizaciones de protección animal para obtener más información y ayuda. 
+                            </li>
+                            <li>
+                                No intentes trasladar el animal:
+                                Deja que los profesionales se encarguen del transporte del animal al centro de rehabilitación más cercano.
+                            </li>
+                            <li>
+                                Si el animal es silvestre, contacta a las autoridades ambientales:<br>
+                                Si se trata de un animal silvestre, reporta el hallazgo a la Procuraduría de Protección al Ambiente (PPA), Procuraduría Federal de Protección al Ambiente (PROFEPA) o a la Secretaría de Medio Ambiente y Recursos Naturales (SEMARNAT). 
+                            </li>
+                            <li>
+                                Si el animal es doméstico, intenta localizar a su dueño:<br>
+                                Si puedes, busca a los propietarios del animal y avísalos de su situación. 
+                            </li>
+
+                        </ol>
+                    </p>
+                </div>
+                <div class="carrusel">
+                    <div class="diapositivas" id="diapositivas">
+                        <div class="diapositiva"><img src="..\img\cantil1.jpeg" alt="Imagen 1"></div>
+                        <div class="diapositiva"><img src="..\img\monaso.jpg" alt="Imagen 2"></div>
+                        <div class="diapositiva"><img src="..\img\puma1.jpeg" alt="Imagen 3"></div>
+                        <div class="diapositiva"><img src="..\img\torogoz1.jpeg" alt="Imagen 4"></div>
+                        <div class="diapositiva"><img src="..\img\carey.jpg" alt="Imagen 5"></div>
+                    </div>
+                    <button class="boton previo" onclick="moverCarrusel(-1)">&#10094;</button>
+                    <button class="boton siguiente" onclick="moverCarrusel(1)">&#10095;</button>
+                </div>
+                <div class="Animales">
+                </div>   
+            </article>
+        </main>
+            
+        <footer>
+            <script src="..\scripts\script.js"></script>
+            <p>ya jugamos mucho a ser dios extinguiendo especies, jugemos tambien a ser humanos y sintamos empatia por ellos</p>  
+        </footer>
+    </body>
+
+</html>
