@@ -3,7 +3,6 @@ let indice = 0;
 const diapositivas = document.getElementById("diapositivas");
 const total = diapositivas.children.length;
 
-const items = document.querySelectorAll('.btnDonacion');
 
 window.onscroll = function () {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -53,27 +52,18 @@ function cerrar() {
 
 }
 
+
+
 // funcion para que el boton de la donacion se mantenga seleccionado
 function keep(opcion){
-    const total = items.length;
-    let cadena = "donacion"+opcion;
-    let i=0;
-    while (i<total){
-        const point = document.getElementById("donacion"+(i));
-            // y en caso de contener la clase actual, lo que hace es quitarla
-            // classlist.cointains nos permite ver si el elemento tiene la clase actual
-        if (point.classList.contains('actual')) {
-                // y toggle lo que hace es que si la tiene la quita y si no la tiene la pone
-                //normalmente lo que hace es quitarla, porque este ciclo se activa cada vez que se selecciona un item
-                // y como el bucle va primero, lo que hara es quitar todos los puntos que tengan la clase actual
-            point.classList.toggle('actual');
-        }
-            i++;
+    const items = document.querySelectorAll('.btnDonacion');
 
-    }
-    const marca = document.getElementById(cadena);
-    marca.classList.toggle('actual');
+    items.forEach(b => b.classList.remove('activo'));
 
+    
+      // Agrega la clase 'activo' solo al botón presionado
+    opcion.classList.add('activo');
+    
 
 }
 

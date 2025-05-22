@@ -333,10 +333,10 @@ a.item:hover {
     border-radius: 10px;
     line-height: 2.5;
 }
-.actual{
+.activo{
     border-style: none;
     border-radius: 10px;
-    background-color: #73482F;
+    background-color: steelblue;
     color: aliceblue;
     transition: 0.3s ease;
 
@@ -347,8 +347,11 @@ button{
     background-color: #023010;
     color: aliceblue;
     padding: 5px;
+    cursor: pointer;
+
 
 }
+
 .confirmar{
     border-style: none;
     border-radius: 10px;
