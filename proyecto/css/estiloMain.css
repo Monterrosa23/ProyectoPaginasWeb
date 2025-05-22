@@ -336,9 +336,9 @@ a.item:hover {
 .activo{
     border-style: none;
     border-radius: 10px;
-    background-color: steelblue;
+    background-color: #70c2a0fd;
     color: aliceblue;
-    transition: 0.3s ease;
+    transition: 1s ease-in-out;
 
 }
 button{
@@ -362,7 +362,7 @@ button{
 button:hover{
     border-style: none;
     border-radius: 10px;
-    background-color: #73482F;
+    background-color: #70c2a0fd;
     color: aliceblue;
     transition: 0.3s ease;
     cursor:pointer;

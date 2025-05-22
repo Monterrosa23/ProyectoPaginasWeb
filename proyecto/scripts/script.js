@@ -2,7 +2,7 @@
 let indice = 0;
 const diapositivas = document.getElementById("diapositivas");
 const total = diapositivas.children.length;
-
+const monto = document.getElementById("donacion1");
 
 window.onscroll = function () {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -29,8 +29,20 @@ function moverCarrusel(direccion) {
 }
 // funcion para confirmar
 function confirmar(){
-    document.getElementById('mensaje').innerHTML="<p>¿Esta seguro de realizar la donacion?<br>Por favor confirme la accion.</p><br><button id='cerrar' class='btnFlotante' onclick='mostrarMensaje(1)'>Cerrar</button> <button id='confirmar'  class='confirmar btnFlotante' onclick='mostrarMensaje(2)'>Confirmar</button>";
-    document.getElementById('mensaje').style.display = 'block';
+    let nombre = document.getElementById("nombre").value;
+    let correo = document.getElementById("correo").value;
+    let pago = document.getElementById("metodo").value;
+
+    if((nombre != null)&&(correo != null)&&(pago != null)){
+        document.getElementById('mensaje').innerHTML="<p>¿Esta seguro de realizar la donacion?<br>Por favor confirme la accion.</p><br><button id='cerrar' class='btnFlotante' onclick='mostrarMensaje(1)'>Cerrar</button> <button id='confirmar'  class='confirmar btnFlotante' onclick='mostrarMensaje(2)'>Confirmar</button>";
+        document.getElementById('mensaje').style.display = 'block';
+    }
+    else{
+        document.getElementById('mensaje').innerHTML="<p>error en los datos por favor rellene los campos.</p><br><button id='cerrar' class='btnFlotante' onclick='mostrarMensaje(3)'>Cerrar</button>";
+        document.getElementById('mensaje').style.display = 'block';
+    }
+
+
 
 }
 function mostrarMensaje(numero){
@@ -42,8 +54,9 @@ function mostrarMensaje(numero){
         document.getElementById('mensaje').innerHTML="<p>agradecemos su colaboracion</p><br><button onclick='cerrar()'>Cerrar</button>";
 
     }
-    
-
+    else if(numero == 3){
+        cerrar();
+    }
 }
 
 function cerrar() {
@@ -55,15 +68,13 @@ function cerrar() {
 
 
 // funcion para que el boton de la donacion se mantenga seleccionado
-function keep(opcion){
+function keep(opcion,num){
     const items = document.querySelectorAll('.btnDonacion');
-
     items.forEach(b => b.classList.remove('activo'));
-
-    
       // Agrega la clase 'activo' solo al botón presionado
     opcion.classList.add('activo');
-    
+    monto = document.getElementById("donacion"+num);
+
 
 }
 
