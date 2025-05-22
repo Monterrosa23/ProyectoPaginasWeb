@@ -29,17 +29,24 @@ function moverCarrusel(direccion) {
 }
 // funcion para confirmar
 function confirmar(){
-    let nombre = document.getElementById("nombre").value;
-    let correo = document.getElementById("correo").value;
-    let pago = document.getElementById("metodo").value;
+    const nombre = document.getElementById("nombre").value;
+    const correo = document.getElementById("correo").value;
+    const pago = document.getElementById("metodo").value;
+    alert("Texto ingresado: " + nombre);
 
-    if((nombre != null)&&(correo != null)&&(pago != null)){
+    if((nombre == "")){
+        alert("Texto ingresado: " + nombre);
         document.getElementById('mensaje').innerHTML="<p>¿Esta seguro de realizar la donacion?<br>Por favor confirme la accion.</p><br><button id='cerrar' class='btnFlotante' onclick='mostrarMensaje(1)'>Cerrar</button> <button id='confirmar'  class='confirmar btnFlotante' onclick='mostrarMensaje(2)'>Confirmar</button>";
         document.getElementById('mensaje').style.display = 'block';
     }
-    else{
+    else if ((nombre != null)){
+        alert("Texto ingresado: " + correo);
         document.getElementById('mensaje').innerHTML="<p>error en los datos por favor rellene los campos.</p><br><button id='cerrar' class='btnFlotante' onclick='mostrarMensaje(3)'>Cerrar</button>";
         document.getElementById('mensaje').style.display = 'block';
+    }
+    else{
+        alert("Texto ingresado: " + pago);
+
     }
 
 
