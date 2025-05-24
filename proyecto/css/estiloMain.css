@@ -68,10 +68,7 @@ article{
 
 }
 /*pequeña correccion para el formulario*/
-.fixi{
-    padding-left: 25%;
-    padding-right: 25%;
-}
+
 /* tip para que el footer este siempre abajo usa las propiedades display flex y min-height: 100vh
 en el body de esa forma siempre estara abajo
 100vh significa 100% de la altura de la ventana del navegador
@@ -198,7 +195,9 @@ a.item:hover {
         display: flex;
         flex-direction: column;
     }
+
 }
+
 
 
 
@@ -327,20 +326,22 @@ a.item:hover {
 
 .donaciones{
     display: block;
-    width: 700px;
-    padding: 40px;
+    position: relative;
+    left: 35%;
+    width: fit-content;
+    height: auto;
     background:#128d5eb4;
     border-radius: 10px;
     line-height: 2.5;
-}
-.activo{
-    border-style: none;
-    border-radius: 10px;
-    background-color: #70c2a0fd;
-    color: aliceblue;
-    transition: 1s ease-in-out;
+    padding: 10px;
 
 }
+.fixi{
+    display: inline;
+
+}
+
+
 button{
     border-style: none;
     border-radius: 10px;
@@ -348,8 +349,6 @@ button{
     color: aliceblue;
     padding: 5px;
     cursor: pointer;
-
-
 }
 
 .confirmar{
@@ -387,9 +386,8 @@ select{
 #mensaje {
     display: none;
     position: fixed;
-    top: 20%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translateX(-50%);
     background-color: white;
     color: black;
     border: 2px solid #4CAF50;
@@ -398,5 +396,18 @@ select{
     margin: 2%;
     z-index: 9999;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  }
+    transition: all 0.9s ease;
+}
 
+#mensaje.activo {
+    top: 50%; /* se mueve hacia abajo */
+    opacity: 1;
+}
+.activo{
+    border-style: none;
+    border-radius: 10px;
+    background-color: #70c2a0fd;
+    color: aliceblue;
+    top: 50%; /* se mueve hacia abajo */
+    opacity: 1;
+}

@@ -28,30 +28,34 @@ function moverCarrusel(direccion) {
 
 }
 // funcion para confirmar
-function confirmar(){
-    const nombre = document.getElementById("nombre").value;
-    const correo = document.getElementById("correo").value;
+function confirmar() {
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("correo").value.trim(); 
     const pago = document.getElementById("metodo").value;
-    alert("Texto ingresado: " + nombre);
+    const monto = document.getElementById("monto").value.trim();
 
-    if((nombre == "")){
-        alert("Texto ingresado: " + nombre);
-        document.getElementById('mensaje').innerHTML="<p>¿Esta seguro de realizar la donacion?<br>Por favor confirme la accion.</p><br><button id='cerrar' class='btnFlotante' onclick='mostrarMensaje(1)'>Cerrar</button> <button id='confirmar'  class='confirmar btnFlotante' onclick='mostrarMensaje(2)'>Confirmar</button>";
-        document.getElementById('mensaje').style.display = 'block';
+    const mensaje = document.getElementById('mensaje');
+
+    // Verifica si algún campo está vacío
+    if (!nombre || !correo || !pago || !monto) {
+        mensaje.innerHTML = `
+            <p>Error en los datos: por favor rellene todos los campos.</p>
+            <br>
+            <button id='cerrar' class='btnFlotante' onclick='mostrarMensaje(3)'>Cerrar</button>
+        `;
+    } else {
+        mensaje.innerHTML = `
+            <p>¿Está seguro de realizar la donación?<br>Por favor confirme la acción.</p>
+            <br>
+            <button id='cerrar' class='btnFlotante' onclick='mostrarMensaje(1)'>Cerrar</button>
+            <button id='confirmar' class='confirmar btnFlotante' onclick='mostrarMensaje(2)'>Confirmar</button>
+        `;
     }
-    else if ((nombre != null)){
-        alert("Texto ingresado: " + correo);
-        document.getElementById('mensaje').innerHTML="<p>error en los datos por favor rellene los campos.</p><br><button id='cerrar' class='btnFlotante' onclick='mostrarMensaje(3)'>Cerrar</button>";
-        document.getElementById('mensaje').style.display = 'block';
-    }
-    else{
-        alert("Texto ingresado: " + pago);
 
-    }
-
-
-
+    mensaje.style.display = 'block';
 }
+
+
 function mostrarMensaje(numero){
 
     if (numero==1){
