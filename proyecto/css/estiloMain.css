@@ -23,6 +23,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    align-items: center;
     background-image: url('../img/otros/fondo/fondoPaginaWeb.png');
     background-position: center;
     background-repeat: repeat;
@@ -39,10 +40,9 @@ header {
 }
 
 main {
-    padding-top: 5%;
     padding-left: 15px;
     text-align: center;
-
+    padding-top: 100px; 
     display: inline-flex;
     flex:1;
     color: aliceblue;
@@ -51,6 +51,12 @@ main {
 
 li{
     list-style: none;
+}
+
+ol.organizado > li{
+    list-style:decimal;
+    line-height: 2;
+    list-style-position: inside;
 }
 aside {
     text-align: center;
@@ -153,16 +159,7 @@ a.item:hover {
 }
 
 /*menu comprimido*/
-@media (max-width: 1700px) {
-    main{
-        padding-top: 8%;
-    }
-}
-@media (max-width: 1200px) {
-    main{
-        padding-top: 10%;
-    }
-}
+
 @media (max-width: 768px) {
     .menuChiqui{
         display:inline;
@@ -189,11 +186,6 @@ a.item:hover {
     }
     header{
         padding: 10px;
-    }
-    main{
-        padding-top: 14%;
-        display: flex;
-        flex-direction: column;
     }
 
 }
@@ -326,8 +318,6 @@ a.item:hover {
 
 .donaciones{
     display: block;
-    position: relative;
-    left: 35%;
     width: fit-content;
     height: auto;
     background:#128d5eb4;
@@ -336,9 +326,12 @@ a.item:hover {
     padding: 10px;
 
 }
-.fixi{
-    display: inline;
 
+.fixi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* altura mínima para asegurar centrado */
 }
 
 
