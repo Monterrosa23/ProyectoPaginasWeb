@@ -9,7 +9,7 @@
     border-radius: 20px;
 }
 
-/* Color Theme Swatches in Hex */
+/* paleta de colores en general */
 .paleta
 { 
     color: #156927; 
@@ -32,7 +32,7 @@ body{
 }
 header {
     position: fixed ;
-    color: #023010;
+    color: #156927;
     width: 100%;
     background: #5fa603;
     filter: drop-shadow(0px 5px 2px #156927b9);
@@ -73,7 +73,6 @@ article{
 
 
 }
-/*pequeña correccion para el formulario*/
 
 /* tip para que el footer este siempre abajo usa las propiedades display flex y min-height: 100vh
 en el body de esa forma siempre estara abajo
@@ -82,11 +81,11 @@ y el flex hace que el footer se mantenga abajo y el main ocupe el espacio restan
 esta bien perron 
   */
 footer {
-    background-color: #14484ed3;
+    background-color: #156927;
     text-align: center;
     padding: 10px;
     top:100%;
-    color: #b2f1c5;
+    color: aliceblue;
     width: 100%;
     height: auto;
     
@@ -121,6 +120,7 @@ a{
     justify-content: space-between;
 
 }
+
 .menu .item {
     display: inline-block;
     padding: 5px 5px;
@@ -221,6 +221,7 @@ a.item:hover {
     scale: 1.05;
 
 }
+/*las tres de abajo son principalmente para que las tejetas de los animales y los creadores tengan la disposicion que tiene ahora mismo*/
 .ladoAlado{
     display: flex;
 }
@@ -320,13 +321,13 @@ a.item:hover {
     display: block;
     width: fit-content;
     height: auto;
-    background:#128d5eb4;
+    background:#156927b4;
     border-radius: 10px;
     line-height: 2.5;
     padding: 10px;
 
 }
-
+/* este div sirve sobte todo para que el formulario quede centrado, esto y otra cosa en el main lo consigue*/
 .fixi {
     display: flex;
     justify-content: center;

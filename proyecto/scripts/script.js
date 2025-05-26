@@ -4,6 +4,8 @@ const diapositivas = document.getElementById("diapositivas");
 const total = diapositivas.children.length;
 const monto = document.getElementById("donacion1");
 
+
+// esta funcion a veces funciona y a veces pero es por l mucho que varia el tamanyo de la pantallas
 window.onscroll = function () {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -12,7 +14,7 @@ window.onscroll = function () {
 
 };
 
-
+// estos se activa cuando la pantalla es chiquita
 function menuBot() {
     const nav = document.getElementById('menu');
     nav.classList.toggle('active');
@@ -29,6 +31,7 @@ function moverCarrusel(direccion) {
 }
 // funcion para confirmar
 function confirmar() {
+    // aqui estoy buscando los datos segun la id
     const nombre = document.getElementById("nombre").value.trim();
     const correo = document.getElementById("correo").value.trim(); 
     const pago = document.getElementById("metodo").value;
@@ -57,6 +60,10 @@ function confirmar() {
 
 
 function mostrarMensaje(numero){
+    // esto quiza es un poco raro, 
+    // pero considere mas eficiente llamar a la misma funcion y ponerle diferentes mensajes segun el valor 
+    // antes que hacer una funcion para cada mensaje
+
 
     if (numero==1){
         document.getElementById('mensaje').innerHTML="<p>no se puede forzar el altruismo en el corazon de la gente</p><br><button onclick='cerrar()'>Cerrar</button>";
