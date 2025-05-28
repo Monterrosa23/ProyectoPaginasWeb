@@ -96,3 +96,9 @@ function keep(opcion,num){
 
 }
 
+const video = document.getElementById('video-fondo');
+
+video.addEventListener('ended', function (){
+    video.style.display = 'none'
+});
+
