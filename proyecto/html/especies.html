@@ -8,7 +8,14 @@
         <meta name="description" content="pagina sobre la concientizacion y proteccion de la fauna endemica de el pais.">
     </head>
     <body>
-        <video muted autoplay src="../Videos/Fondo3 (1).mp4" type="Fondo3/mp4" id="video-fondo" class="videocontent"></video>
+        <video muted autoplay src="../videos/Fondo3.mp4" type="Fondo3/mp4" id="video-fondo" class="videocontent"></video>
+        <script>
+            const video = document.getElementById('video-fondo');
+
+            video.addEventListener('ended', function (){
+                video.style.display = 'none'
+            });
+        </script>
         <div id="scroll-progress"></div>
         <header>
             <h1><a class="item2" href="../html/main.html">Grupo Torogoz Azul</a></h1>
@@ -131,6 +138,15 @@
         <footer>
             <script src="..\scripts\script.js"></script>
             <p>ya jugamos mucho a ser dios extinguiendo especies, jugemos tambien a ser humanos y sintamos empatia por ellos</p>  
+            <p>
+                Siguenes en nuestras redes sociales:<br>
+                <a class="facebook" href="https://www.facebook.com/itca.fepade.zacatecoluca/" title="DPW">
+                    <img src="../img/otros/iconos/pngwing.com.png" width="30px" height="30px"> </a>
+                <a class="whatsapp" href="https://web.whatsapp.com/" title="DPW">
+                        <img src="../img/otros/iconos/whatsapp.png" width="30px" height="30px"> </a>
+                <a class="gmail" href="https://mail.google.com" title="DPW">
+                        <img src="../img/otros/iconos/gmail.png" width="30px" height="30px"> </a>
+            </p>
         </footer>
     </body>
 
