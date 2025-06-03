@@ -448,3 +448,8 @@ select{
     top: 50%; /* se mueve hacia abajo */
     opacity: 1;
 }
+
+.item.pActual{
+    text-decoration: underline ;
+
+}
