@@ -9,6 +9,14 @@
     </head>
     <body>
         <video muted autoplay src="../videos/Fondo3.mp4" type="Fondo3/mp4" id="video-fondo" class="videocontent"></video>
+
+        <script>
+            const video = document.getElementById('video-fondo');
+
+            video.addEventListener('ended', function (){
+                video.style.display = 'none'
+            });
+        </script>
         <div id="scroll-progress"></div>
         <header>
             <h1><a class="item2" href="../html/main.html">Grupo Torogoz Azul</a></h1>
