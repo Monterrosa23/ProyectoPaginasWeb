@@ -96,5 +96,10 @@ function keep(opcion,num){
 
 }
 
+function mostrarBusqueda() {
+    const nav = document.getElementById('buscador');
+    nav.classList.toggle('activeBuscar');
+
+}
 
 
