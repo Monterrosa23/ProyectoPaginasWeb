@@ -2,13 +2,13 @@
 <html>
     <head>
         <title>main page</title>
-        <link rel="stylesheet" type="text/css" href="..\css\estiloMain.css">
+        <link rel="stylesheet" type="text/css" href="css\estiloMain.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="description" content="pagina sobre la concientizacion y proteccion de la fauna endemica de el pais.">
     </head>
     <body>
-        <video muted autoplay src="../videos/Fondo3.mp4" type="Fondo3/mp4" id="video-fondo" class="videocontent"></video>
+        <video muted autoplay src="videos/Fondo3.mp4" type="Fondo3/mp4" id="video-fondo" class="videocontent"></video>
         <script>
             const video = document.getElementById('video-fondo');
 
@@ -18,36 +18,40 @@
         </script>
         <div id="scroll-progress"></div>
         <header>
-            <h1><a class="item2" href="../html/main.html">Grupo Torogoz Azul</a></h1>
+            <h1><a class="item2" href="index.html">Grupo Torogoz Azul</a></h1>
+            
             <div class ="menuChiqui" onclick="menuBot()">☰</div>
             <nav class="menu" id="menu">
-                <a class="item" href="../html/main.html">Inicio</a>
-                <a class="item" href="../html/nosotros.html">Nosotros</a>
-                <a class="item" href="../html/donaciones.html">Donaciones</a>
-                <a class="item pActual" href="../html/especies.html">Especies</a>
-                <a class="item" href="../html/servicios.html">Servicios</a>
+                <a class="item pActual" href="index.html" >Inicio</a>
+                <a class="item" href="nosotros.html">Nosotros</a>
+                <a class="item" href="donaciones.html">Donaciones</a> 
+                <a class="item" href="especies.html">Especies</a>
+                <a class="item" href="servicios.html">Servicios</a>
                 <div class="search-container">
-                    
+
                     <input type="text" class="search-box" id="buscador"  placeholder="Buscar...">
                     <button class="search-button" onclick="mostrarBusqueda(1)">Buscar</button>
                     
                 </div>
-            </nav>
+                
+            </nav> 
 
             <div class="search-containerSmall">
-                <button class="search-button" onclick="mostrarBusqueda(2)">Buscar</button>
-                <input type="text" class="search-box" id="buscadorSmall"  placeholder="Buscar...">
-            </div>
+                    <button class="search-button" onclick="mostrarBusqueda(2)">Buscar</button>
+                    <input type="text" class="search-box" id="buscadorSmall"  placeholder="Buscar...">
+                </div>
+
+
         </header>
         <main>
             <article>
                 <div class="carrusel">
                     <div class="diapositivas" id="diapositivas">
-                        <div class="diapositiva"><img src="../img/animales/cantil/cantil1.jpeg" alt="Imagen 1"></div>
-                        <div class="diapositiva"><img src="../img/animales/mono/monaso.jpg" alt="Imagen 2"></div>
-                        <div class="diapositiva"><img src="../img/animales/puma/puma1.jpeg" alt="Imagen 3"></div>
-                        <div class="diapositiva"><img src="../img/animales/torogoz/torogoz1.jpeg" alt="Imagen 4"></div>
-                        <div class="diapositiva"><img src="../img/animales/extras/carey.jpg" alt="Imagen 5"></div>
+                        <div class="diapositiva"><img src="img/animales/cantil/cantil1.jpeg" alt="Imagen 1"></div>
+                        <div class="diapositiva"><img src="img/animales/mono/monaso.jpg" alt="Imagen 2"></div>
+                        <div class="diapositiva"><img src="img/animales/puma/puma1.jpeg" alt="Imagen 3"></div>
+                        <div class="diapositiva"><img src="img/animales/torogoz/torogoz1.jpeg" alt="Imagen 4"></div>
+                        <div class="diapositiva"><img src="img/animales/extras/carey.jpg" alt="Imagen 5"></div>
                     </div>
                     <button class="boton previo" onclick="moverCarrusel(-1)">&#10094;</button>
                     <button class="boton siguiente" onclick="moverCarrusel(1)">&#10095;</button>
@@ -70,8 +74,8 @@
                     <h2>conocelos antes de que se extingan</h2>
                     <div class="ladoAlado">
                         <div class="Exhibicion">
-                            <a href="..\html\torogoz.html">
-                                <img src="../img/animales/torogoz/torogoz.png" alt="torogoz" class="silueta">
+                            <a href="torogoz.html">
+                                <img src="img/animales/torogoz/torogoz.png" alt="torogoz" class="silueta">
                                 <div class="oculto">conoceme!</div>
                             </a>
                             <br>
@@ -86,8 +90,8 @@
                             </p>
                         </div>
                         <div class="Exhibicion">
-                            <a href="..\html\cantil.html">
-                                <img src="../img/animales/cantil/cantil.png" alt="cantil" class="silueta">
+                            <a href="cantil.html">
+                                <img src="img/animales/cantil/cantil.png" alt="cantil" class="silueta">
                                 <div class="oculto">conoceme!</div>
                             </a>
                             <br>
@@ -104,8 +108,8 @@
                     </div>
                     <div class="ladoAlado">
                         <div class="Exhibicion">
-                            <a href="..\html\puma.html">
-                                <img src="../img/animales/puma/puma.png" alt="puma" class="silueta">
+                            <a href="puma.html">
+                                <img src="img/animales/puma/puma.png" alt="puma" class="silueta">
                                 <div class="oculto">conoceme!</div>
                             </a>
                             <br>
@@ -123,8 +127,8 @@
                             </p>
                         </div>
                         <div class="Exhibicion">
-                            <a href="..\html\mono.html">
-                                <img src="../img/animales/mono/monoA.png" alt="mono" class="silueta">
+                            <a href="mono.html">
+                                <img src="img/animales/mono/monoA.png" alt="mono" class="silueta">
                                 <div class="oculto">conoceme!</div>
                             </a>
                             <br>
@@ -147,16 +151,16 @@
         </main>
             
         <footer>
-            <script src="..\scripts\script.js"></script>
+            <script src="scripts\script.js"></script>
             <p>ya jugamos mucho a ser dios extinguiendo especies, jugemos tambien a ser humanos y sintamos empatia por ellos</p>  
             <p>
                 Siguenes en nuestras redes sociales:<br>
                 <a class="facebook" href="https://www.facebook.com/itca.fepade.zacatecoluca/" title="DPW">
-                    <img src="../img/otros/iconos/pngwing.com.png" width="30px" height="30px"> </a>
+                    <img src="img/otros/iconos/pngwing.com.png" width="30px" height="30px"> </a>
                 <a class="whatsapp" href="https://web.whatsapp.com/" title="DPW">
-                        <img src="../img/otros/iconos/whatsapp.png" width="30px" height="30px"> </a>
+                        <img src="img/otros/iconos/whatsapp.png" width="30px" height="30px"> </a>
                 <a class="gmail" href="https://mail.google.com" title="DPW">
-                        <img src="../img/otros/iconos/gmail.png" width="30px" height="30px"> </a>
+                        <img src="img/otros/iconos/gmail.png" width="30px" height="30px"> </a>
             </p>
         </footer>
     </body>
