@@ -78,7 +78,7 @@ function mostrarMensaje(numero){
         
         document.getElementById('mensaje').innerHTML=`
         <img style='border-radius: 10px; width: 100px; height:auto' 
-        src='../img/otros/personas/jose.png' alt='monterrosa'>
+        src='img/otros/personas/jose.png' alt='monterrosa'>
         <p>
             mi nombre es jose roberto monterrosa bonilla, estudiante en el instituto tecnico ITCA FEPADE de la carrera
             tecnica de ingenieria en desarrollo de software
@@ -87,7 +87,7 @@ function mostrarMensaje(numero){
         </p>
         <br>
         <a class="facebook" href="https://www.facebook.com/itca.fepade.zacatecoluca/" title="DPW">
-            <img src="../img/otros/iconos/facebook1.png" width="30px" height="30px" > </a>
+            <img src="img/otros/iconos/facebook1.png" width="30px" height="30px" > </a>
         <br>
         <br>
         <button onclick='cerrar()'>Cerrar</button>`
@@ -98,7 +98,7 @@ function mostrarMensaje(numero){
     else if(numero == 5){
         
         document.getElementById('mensaje').innerHTML=`
-        <img style="border-radius: 10px; width: 100px; height: auto" src="../img/otros/personas/cristian.png" alt="cristian">
+        <img style="border-radius: 10px; width: 100px; height: auto" src="img/otros/personas/cristian.png" alt="cristian">
         <p>
         Soy Cristian Miguel Hernandez Amaya, futuro programador actualmente estudiando un técnico en ingeniería 
         en desarrollo de software.
@@ -107,7 +107,7 @@ function mostrarMensaje(numero){
         </p>
         <br>
         <a class="facebook" href="https://www.facebook.com/itca.fepade.zacatecoluca/" title="DPW">
-            <img src="../img/otros/iconos/facebook1.png" width="30px" height="30px" > </a>
+            <img src="img/otros/iconos/facebook1.png" width="30px" height="30px" > </a>
         <br>
         <br>
         <button onclick="cerrar()">Cerrar</button>`;
@@ -118,7 +118,7 @@ function mostrarMensaje(numero){
         
         document.getElementById('mensaje').innerHTML=`
         <img style='border-radius: 10px; width: 100px; height:auto' 
-        src='../img/otros/personas/jeremias.png' alt='jeremias'>
+        src='img/otros/personas/jeremias.png' alt='jeremias'>
         <p>
             jeremias jeremias
             <br>
@@ -126,7 +126,7 @@ function mostrarMensaje(numero){
         </p>
         <br>
         <a class="facebook" href="https://www.facebook.com/itca.fepade.zacatecoluca/" title="DPW">
-            <img src="../img/otros/iconos/facebook1.png" width="30px" height="30px" > </a>
+            <img src="img/otros/iconos/facebook1.png" width="30px" height="30px" > </a>
         <br>
         <br>
         <button onclick='cerrar()'>Cerrar</button>`
@@ -138,7 +138,7 @@ function mostrarMensaje(numero){
         
         document.getElementById('mensaje').innerHTML=`
         <img style='border-radius: 10px; width: 100px; height:auto' 
-        src='../img/otros/personas/anderson.png' alt='anderson'>
+        src='img/otros/personas/anderson.png' alt='anderson'>
         <p>
             Soy Anderson Josué Urquilla Rivas, 
             futuro desarrollador de videojuegos actualmente 
@@ -150,7 +150,7 @@ function mostrarMensaje(numero){
         </p>
         <br>
         <a class="facebook" href="https://www.facebook.com/itca.fepade.zacatecoluca/" title="DPW">
-            <img src="../img/otros/iconos/facebook1.png" width="30px" height="30px"> </a>
+            <img src="img/otros/iconos/facebook1.png" width="30px" height="30px"> </a>
         <br>
         <br>
         <button onclick='cerrar()'>Cerrar</button>`
