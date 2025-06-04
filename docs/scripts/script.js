@@ -98,7 +98,8 @@ function mostrarMensaje(numero){
     else if(numero == 5){
         
         document.getElementById('mensaje').innerHTML=`
-        <img style="border-radius: 10px; width: 100px; height: auto" src="img/otros/personas/cristian.png" alt="cristian">
+        <img style="border-radius: 10px; width: 100px; height: auto" 
+        src="img/otros/personas/cristian.png" alt="cristian">
         <p>
         Soy Cristian Miguel Hernandez Amaya, futuro programador actualmente estudiando un técnico en ingeniería 
         en desarrollo de software.
