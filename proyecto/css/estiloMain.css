@@ -131,7 +131,6 @@ a{
 /*menu de navegacion*/
 
 .menu {
-
     position: fixed;
     width: 100%;
     padding: 10px;
@@ -195,7 +194,7 @@ a.item:hover {
         flex-direction: column;
         top: 100%;
         left: 0;
-        width: 200px;
+        width: auto;
         background: #5fa603b4;
     /* esta instruccion es para que este elemento se superponga respecto al resto de elementos*/
         z-index: 10;
@@ -207,6 +206,29 @@ a.item:hover {
     }
     header{
         padding: 10px;
+    }
+    .search-container{
+
+        display:none;
+        flex-direction: column;
+
+    }
+    .search-button {
+        width: 100px;
+
+
+    }
+    .search-containerSmall{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top:20%;
+
+    }
+    .search-button {
+        position: fixed;
+        right: 0;
     }
 
 }
@@ -396,11 +418,13 @@ select{
 }
 
 .search-box.activeBuscar {
-    display:inline-block;
+
+    display:table-row;
     padding: 10px;
     width: 300px;
     font-size: 16px;
     border-radius: 10px;
+    
 
 }
 .search-button {

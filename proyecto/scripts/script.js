@@ -58,7 +58,7 @@ function confirmar() {
     mensaje.style.display = 'block';
 }
 
-
+// esta funcion es grandisima porque controla los mensajes y cuadros emergentes de todo el sitio web 
 function mostrarMensaje(numero){
     // esto quiza es un poco raro, 
     // pero considere mas eficiente llamar a la misma funcion y ponerle diferentes mensajes segun el valor 
@@ -82,8 +82,13 @@ function mostrarMensaje(numero){
         <p>
             mi nombre es jose roberto monterrosa bonilla, estudiante en el instituto tecnico ITCA FEPADE de la carrera
             tecnica de ingenieria en desarrollo de software
-            tengo 22 años resido en el area zacatecoluca, me gustan los juegos de cartas, el pinpong y cocinar
+            tengo 22 años resido en el area zacatecoluca, me gustan los juegos de cartas, el pinpong y cocinar<br>
+            redes:
         </p>
+        <br>
+        <a class="facebook" href="https://www.facebook.com/itca.fepade.zacatecoluca/" title="DPW">
+            <img src="../img/otros/iconos/facebook1.png" width="30px" height="30px" > </a>
+        <br>
         <br>
         <button onclick='cerrar()'>Cerrar</button>`
         ;
@@ -97,9 +102,13 @@ function mostrarMensaje(numero){
         <p>
         Soy Cristian Miguel Hernandez Amaya, futuro programador actualmente estudiando un técnico en ingeniería 
         en desarrollo de software.
-        Tengo 21 años, resido en el área de Barrio El Centro, San Emigdio La Paz y me gustan los videojuegos de estrategia.
+        Tengo 21 años, resido en el área de Barrio El Centro, San Emigdio La Paz y me gustan los videojuegos de estrategia.<br>
         Redes:
         </p>
+        <br>
+        <a class="facebook" href="https://www.facebook.com/itca.fepade.zacatecoluca/" title="DPW">
+            <img src="../img/otros/iconos/facebook1.png" width="30px" height="30px" > </a>
+        <br>
         <br>
         <button onclick="cerrar()">Cerrar</button>`;
 
@@ -112,8 +121,15 @@ function mostrarMensaje(numero){
         src='../img/otros/personas/jeremias.png' alt='jeremias'>
         <p>
             jeremias jeremias
+            <br>
+            redes:
         </p>
-        <br><button onclick='cerrar()'>Cerrar</button>`
+        <br>
+        <a class="facebook" href="https://www.facebook.com/itca.fepade.zacatecoluca/" title="DPW">
+            <img src="../img/otros/iconos/facebook1.png" width="30px" height="30px" > </a>
+        <br>
+        <br>
+        <button onclick='cerrar()'>Cerrar</button>`
         ;
 
         mensaje.style.display = 'block';
@@ -129,9 +145,13 @@ function mostrarMensaje(numero){
             estudio un técnico en Ingeniería en desarrollo de Software en I.T.C.A, 
             Zacatecoluca, tengo 19 años, 
             resido en el Rosario, La Paz y me gusta la música, 
-            el fútbol y los videojuegos de fútbol.
+            el fútbol y los videojuegos de fútbol.<br>
             Redes: 
         </p>
+        <br>
+        <a class="facebook" href="https://www.facebook.com/itca.fepade.zacatecoluca/" title="DPW">
+            <img src="../img/otros/iconos/facebook1.png" width="30px" height="30px"> </a>
+        <br>
         <br>
         <button onclick='cerrar()'>Cerrar</button>`
         ;
@@ -161,9 +181,20 @@ function keep(opcion,num){
 
 }
 
-function mostrarBusqueda() {
-    const nav = document.getElementById('buscador');
-    nav.classList.toggle('activeBuscar');
+function mostrarBusqueda(num) {
+    if(num==1){
+        const nav = document.getElementById('buscador');
+        nav.classList.toggle('activeBuscar');
+        nav.value = "";
+
+    }
+    else if(num==2){
+        const nav = document.getElementById('buscadorSmall');
+        nav.classList.toggle('activeBuscar');
+        nav.value = "";
+        
+    }
+    
 
 }
 

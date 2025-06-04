@@ -19,7 +19,7 @@
         <div id="scroll-progress"></div>
         <header>
             <h1><a class="item2" href="../html/main.html">Grupo Torogoz Azul</a></h1>
-
+            
             <div class ="menuChiqui" onclick="menuBot()">☰</div>
             <nav class="menu" id="menu">
                 <a class="item pActual" href="../html/main.html" >Inicio</a>
@@ -28,12 +28,19 @@
                 <a class="item" href="../html/especies.html">Especies</a>
                 <a class="item" href="../html/servicios.html">Servicios</a>
                 <div class="search-container">
-                    
+
                     <input type="text" class="search-box" id="buscador"  placeholder="Buscar...">
-                    <button class="search-button" onclick="mostrarBusqueda()">Buscar</button>
+                    <button class="search-button" onclick="mostrarBusqueda(1)">Buscar</button>
                     
                 </div>
+                
             </nav> 
+
+            <div class="search-containerSmall">
+                    <button class="search-button" onclick="mostrarBusqueda(2)">Buscar</button>
+                    <input type="text" class="search-box" id="buscadorSmall"  placeholder="Buscar...">
+                </div>
+
 
         </header>
         <div id='mensaje'></div>
