@@ -64,7 +64,6 @@ function mostrarMensaje(numero){
     // pero considere mas eficiente llamar a la misma funcion y ponerle diferentes mensajes segun el valor 
     // antes que hacer una funcion para cada mensaje
 
-
     if (numero==1){
         document.getElementById('mensaje').innerHTML="<p>no se puede forzar el altruismo en el corazon de la gente</p><br><button onclick='cerrar()'>Cerrar</button>";
     }
@@ -75,6 +74,72 @@ function mostrarMensaje(numero){
     else if(numero == 3){
         cerrar();
     }
+    else if(numero == 4){
+        
+        document.getElementById('mensaje').innerHTML=`
+        <img style='border-radius: 10px; width: 100px; height:auto' 
+        src='../img/otros/personas/jose.png' alt='monterrosa'>
+        <p>
+            mi nombre es jose roberto monterrosa bonilla, estudiante en el instituto tecnico ITCA FEPADE de la carrera
+            tecnica de ingenieria en desarrollo de software
+            tengo 22 años resido en el area zacatecoluca, me gustan los juegos de cartas, el pinpong y cocinar
+        </p>
+        <br>
+        <button onclick='cerrar()'>Cerrar</button>`
+        ;
+
+        mensaje.style.display = 'block';
+    }
+    else if(numero == 5){
+        
+        document.getElementById('mensaje').innerHTML=`
+        <img style="border-radius: 10px; width: 100px; height: auto" src="../img/otros/personas/cristian.png" alt="cristian">
+        <p>
+        Soy Cristian Miguel Hernandez Amaya, futuro programador actualmente estudiando un técnico en ingeniería 
+        en desarrollo de software.
+        Tengo 21 años, resido en el área de Barrio El Centro, San Emigdio La Paz y me gustan los videojuegos de estrategia.
+        Redes:
+        </p>
+        <br>
+        <button onclick="cerrar()">Cerrar</button>`;
+
+        mensaje.style.display = 'block';
+    }
+    else if(numero == 6){
+        
+        document.getElementById('mensaje').innerHTML=`
+        <img style='border-radius: 10px; width: 100px; height:auto' 
+        src='../img/otros/personas/jeremias.png' alt='jeremias'>
+        <p>
+            jeremias jeremias
+        </p>
+        <br><button onclick='cerrar()'>Cerrar</button>`
+        ;
+
+        mensaje.style.display = 'block';
+    }
+    else if(numero == 7){
+        
+        document.getElementById('mensaje').innerHTML=`
+        <img style='border-radius: 10px; width: 100px; height:auto' 
+        src='../img/otros/personas/anderson.png' alt='anderson'>
+        <p>
+            Soy Anderson Josué Urquilla Rivas, 
+            futuro desarrollador de videojuegos actualmente 
+            estudio un técnico en Ingeniería en desarrollo de Software en I.T.C.A, 
+            Zacatecoluca, tengo 19 años, 
+            resido en el Rosario, La Paz y me gusta la música, 
+            el fútbol y los videojuegos de fútbol.
+            Redes: 
+        </p>
+        <br>
+        <button onclick='cerrar()'>Cerrar</button>`
+        ;
+
+        mensaje.style.display = 'block';
+    }
+
+    
 }
 
 function cerrar() {

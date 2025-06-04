@@ -252,9 +252,7 @@ a.item:hover {
     border-radius: 10px;
     flex: 1;
     overflow: hidden;
-    height: 500px;
-    
-
+    height: 400px;
 }
 .ExhibicionM{
     margin: 5px;
@@ -262,9 +260,6 @@ a.item:hover {
     border-radius: 10px;
     flex: 1;
     height: fit-content;
-
-    
-
 }
 
 /*fin del estilo de la silueta*/
@@ -436,18 +431,6 @@ select{
     transition: all 0.9s ease;
 }
 
-#mensaje.activo {
-    top: 50%; /* se mueve hacia abajo */
-    opacity: 1;
-}
-.activo{
-    border-style: none;
-    border-radius: 10px;
-    background-color: #70c2a0fd;
-    color: aliceblue;
-    top: 50%; /* se mueve hacia abajo */
-    opacity: 1;
-}
 
 .item.pActual{
     text-decoration: underline ;
